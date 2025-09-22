@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculation Result</title>
+  <style>
+    body {
+      background-color: #f8e9dc;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .container {
+      display: inline-block;
+      text-align: left;
+      margin-top: 50px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .lista-centrada { display: flex; justify-content: center; }
+    .lista-centrada ul { list-style-position: inside; text-align: left; }
+  </style>
+</head>
+<body>
+  <div class='separator'>====================================</div>
+  <h2><u>Assignment #3</u></h2>
+  <p><strong>Python Script Result:</strong></p>
+
+  <p><strong>Original Values:</strong></p>
+  <div class='lista-centrada'>
+    <ul>
+      <li>x: {{ x_val }}</li>
+      <li>y: {{ y_val }}</li>
+      <li>z: {{ z_val }}</li>
+    </ul>
+  </div>
+
+  <p><strong>Calculation Steps:</strong></p>
+  <div class='lista-centrada'>
+    <ol>
+      <li>Initial value of x: {{ x_val }}</li>
+      <li>After x += y: {{ firstOperation }}</li>
+      <li>After x -= z: {{ secondOperation }}</li>
+      <li>After x *= y: {{ thirdOperation }}</li>
+      <li>After x %= z: {{ fourthOperation }}</li>
+      <li>After x /= z: {{ fifthOperation }}</li>
+    </ol>
+  </div>
+
+  <h2>Result: x + y + z = {{ final_result }}</h2>
+  <div class='separator'>====================================</div>
+</body>
+</html>
