@@ -4,9 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $y = escapeshellarg($_POST['y']);
     $z = escapeshellarg($_POST['z']);
 
-    $script = "C:\\xampp\\htdocs\\views.py";
-
-    $command = "python $script $x $y $z";
+    $command = "python3  assignment3_core/math_operations/math_form.py $x $y $z";
     $output = [];
     exec($command, $output);
 
